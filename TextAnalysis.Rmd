@@ -3,10 +3,10 @@ title: "Visualizing Themes in Research About Refugee Children"
 author: "Sebastian Santana Ortiz"
 date: "2023-Mar-03"
 output:
-  html_document: 
-    highlight: tango
-    theme: spacelab
-    df_print: default
+  github_document: 
+    #highlight: tango
+    #theme: spacelab
+    #df_print: default
     number_sections: yes
 ---
 
