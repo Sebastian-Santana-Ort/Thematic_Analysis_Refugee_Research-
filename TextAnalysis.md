@@ -3,6 +3,45 @@ Visualizing Themes in Research About Refugee Children
 Sebastian Santana Ortiz
 2023-Mar-03
 
+- [1 Load and Clean Data](#load-and-clean-data)
+  - [1.1 Load PubMed File](#11-load-pubmed-file)
+  - [1.2 Filter stop words and
+    fillers](#12-filter-stop-words-and-fillers)
+  - [1.3 Filtering words related to
+    keywords](#13-filtering-words-related-to-keywords)
+- [2 Sentiment Analysis](#sentiment-analysis)
+  - [2.1 Get and join sentiment data with title
+    words](#21-get-and-join-sentiment-data-with-title-words)
+  - [2.2 Frequency of positive and negative words in
+    histogram](#22-frequency-of-positive-and-negative-words-in-histogram)
+  - [2.3 Frequency of positive and negative words in word
+    cloud](#23-frequency-of-positive-and-negative-words-in-word-cloud)
+  - [2.4 Ratio of positive to negative word usage across
+    years](#24-ratio-of-positive-to-negative-word-usage-across-years)
+- [3 Correlations](#correlations)
+  - [3.1 Using Widyr to compute pairwise
+    correlations](#31-using-widyr-to-compute-pairwise-correlations)
+  - [3.2 Most associated words with top positive and negative
+    words](#32-most-associated-words-with-top-positive-and-negative-words)
+- [4 N-grams: Bigrams](#n-grams-bigrams)
+  - [4.1 Creating and filtering
+    bigrams](#41-creating-and-filtering-bigrams)
+  - [4.2 Relative and Total Bigram
+    Frequency](#42-relative-and-total-bigram-frequency)
+  - [4.3 Network of Bigrams](#43-network-of-bigrams)
+- [5 N-grams: Trigrams](#n-grams-trigrams)
+  - [5.1 Computing and filtering
+    trigrams](#51-computing-and-filtering-trigrams)
+  - [5.2 Common health related words](#52-common-health-related-words)
+  - [5.3 Total Frequency](#53-total-frequency)
+  - [5.4 Relative Frequency (based on Inverse Document
+    Frequnecy)](#54-relative-frequency-based-on-inverse-document-frequnecy)
+- [6 Thematic Analysis](#thematic-analysis)
+  - [6.1 Creating themes using Latent Dirichlet
+    allocation](#61-creating-themes-using-latent-dirichlet-allocation)
+  - [6.2 Visualizing LDA
+    classifications](#62-visualizing-lda-classifications)
+
 > As part of a past RA position, I was asked to do a cursory literature
 > review on the health and education outcomes of refugee children. In
 > the past five years, more than 1,000 related articles were published
