@@ -10,16 +10,6 @@ output:
     number_sections: yes
 ---
 
-```{css echo=FALSE}
-#r-markdown  {
-  margin-top: 6em;
-}
-
-#r-markdown p:first-of-type {
-  margin-bottom: 3em;
-}
-``` 
-
 > As part of a past RA position, I was asked to do a cursory literature review on the health and education outcomes of refugee children. In the past five years, more than 1,000 related articles were published in PubMed datasets. I was able to read and code 200 in a week, for the rest I used R.
 
 > The code I used to analyze text is based on the ["Text Mining with R"](https://www.tidytextmining.com/index.html) textbook, published by Julia Silge and David Robinson.

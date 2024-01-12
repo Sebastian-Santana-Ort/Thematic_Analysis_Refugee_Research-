@@ -3,15 +3,6 @@ Visualizing Themes in Research About Refugee Children
 Sebastian Santana Ortiz
 2023-Mar-03
 
-<style type="text/css">
-#r-markdown  {
-  margin-top: 6em;
-}
-&#10;#r-markdown p:first-of-type {
-  margin-bottom: 3em;
-}
-</style>
-
 > As part of a past RA position, I was asked to do a cursory literature
 > review on the health and education outcomes of refugee children. In
 > the past five years, more than 1,000 related articles were published
@@ -56,7 +47,7 @@ data %>%
   labs(y = NULL)
 ```
 
-![](TextAnalysis_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](TextAnalysis_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
 ## 1.3 Filtering words related to keywords
 
@@ -73,7 +64,7 @@ data_filtered %>%
   labs(y = NULL)
 ```
 
-![](TextAnalysis_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![](TextAnalysis_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 # 2 Sentiment Analysis
 
@@ -101,7 +92,7 @@ bing_word_counts %>%
        y = NULL)
 ```
 
-![](TextAnalysis_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+![](TextAnalysis_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
 ## 2.3 Frequency of positive and negative words in word cloud
 
@@ -114,7 +105,7 @@ data_filtered %>%
                    max.words = 100)
 ```
 
-![](TextAnalysis_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![](TextAnalysis_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
 ## 2.4 Ratio of positive to negative word usage across years
 
@@ -131,7 +122,7 @@ ggplot(ratio_hist, aes(index, sentiment, fill = Publication.Year)) +
   facet_wrap(~Publication.Year, ncol = 2, scales = "free_x")
 ```
 
-![](TextAnalysis_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+![](TextAnalysis_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
 
 # 3 Correlations
 
@@ -169,7 +160,7 @@ word_cors %>%
   coord_flip()
 ```
 
-![](TextAnalysis_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+![](TextAnalysis_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
 
 # 4 N-grams: Bigrams
 
@@ -218,7 +209,7 @@ bigram_tf_idf %>%
   labs(x = "Inverse Document Frequnecy", y = NULL)
 ```
 
-![](TextAnalysis_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
+![](TextAnalysis_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
 
 > Total frequency
 
@@ -234,7 +225,7 @@ bigram_tf_idf %>%
   labs(x = "Frequency Count", y = NULL)
 ```
 
-![](TextAnalysis_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
+![](TextAnalysis_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
 
 ## 4.3 Network of Bigrams
 
@@ -275,7 +266,7 @@ ggraph(bigram_graph, layout = "fr") +
   theme_void()
 ```
 
-![](TextAnalysis_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
+![](TextAnalysis_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
 
 # 5 N-grams: Trigrams
 
@@ -348,7 +339,7 @@ trigram_tf_idf %>%
   labs(x = "n", y = NULL)
 ```
 
-![](TextAnalysis_files/figure-gfm/unnamed-chunk-22-1.png)<!-- -->
+![](TextAnalysis_files/figure-gfm/unnamed-chunk-21-1.png)<!-- -->
 
 ## 5.4 Relative Frequency (based on Inverse Document Frequnecy)
 
@@ -363,7 +354,7 @@ trigram_tf_idf %>%
   labs(x = "tf-idf", y = NULL)
 ```
 
-![](TextAnalysis_files/figure-gfm/unnamed-chunk-23-1.png)<!-- -->
+![](TextAnalysis_files/figure-gfm/unnamed-chunk-22-1.png)<!-- -->
 
 # 6 Thematic Analysis
 
@@ -400,6 +391,6 @@ ap_top_terms %>%
   scale_y_reordered()
 ```
 
-![](TextAnalysis_files/figure-gfm/unnamed-chunk-26-1.png)<!-- -->
+![](TextAnalysis_files/figure-gfm/unnamed-chunk-25-1.png)<!-- -->
 
 $~$
