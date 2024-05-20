@@ -17,4 +17,9 @@ I was able to perform the following:
 ![alt text](https://github.com/Sebastian-Santana-Ort/Thematic_Analysis_Refugee_Research-/blob/main/Images/k-Means.png?raw=true)
 
 
-In this repository, you will find the following items: (1) The original Markdown used to create these images, (2) A copy of the dataset I utilized, (3) an R project file which, when opened, will allow you to replicate my work, (4) a folder containing the images above, and (5) .md file containing more detail on all my analysis.
+In this repository, you will find the following items: 
+  1. A .md file containing more detail on all my analysis (**_Open This First_**),
+  2. The original Markdown used to create these images,
+  3. A copy of the dataset I utilized,
+  4. An R project file which, when opened, will allow you to replicate my work, and
+  5. A folder containing the images above.
